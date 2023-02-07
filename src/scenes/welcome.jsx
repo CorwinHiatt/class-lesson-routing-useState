@@ -1,12 +1,12 @@
-import logo from '../logo.svg';
+import { Link } from 'react-router-dom'
+import logo from '../logo.svg'
 
-export default function Welcome({setIsLoggedIn}){
-  //sets state state in Parent component
+export default function Welcome({ setIsLoggedIn }) {
   return (
     <>
-    <img src={logo} className="App-logo" alt="logo" />
-    <h1>Welcome to react!!!</h1>
-    <button onClick={() => setIsLoggedIn(true)}>Login</button>
+      <img src={logo} className="App-logo" alt="logo" />
+      <h1>Welcome to React!</h1>
+      <Link to="/home" className='App-link'>Home</Link>
     </>
-  )
+  );
 }
