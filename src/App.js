@@ -1,4 +1,6 @@
+
 import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './scenes/home';
 import Welcome from './scenes/welcome';
 import './App.css';
