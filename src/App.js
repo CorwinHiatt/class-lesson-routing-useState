@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {!isLoggedIn //if not logged in 
+        {(!isLoggedIn) //if not logged in 
          ? <Welcome setIsLoggedIn={setIsLoggedIn}/> // then render welcome
-         : <Home/> // else render home
+         : <Home setIsLoggedIn={setIsLoggedIn}/> // else render home
          }
        </header>
     </div>
